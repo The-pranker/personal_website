@@ -1,35 +1,72 @@
-@import url('https://googleapis.com');
+@import url('https://googleapis.com'); 
 
-html {
-    scroll-behavior: smooth;
-    font-family: 'Poppins', sans-serif;
-    background-color: #415a77;
-    font-size: 20px;
+html { 
+  scroll-behavior: smooth; 
+  font-family: 'Poppins', sans-serif; 
+  background-color: #415a77; 
+  font-size: 20px; 
+} 
+
+nav { 
+  display: flex; 
+  justify-content: space-evenly; 
+  background-color: #778da9; 
+  padding-top: 20px; 
+  padding-bottom: 20px; 
+  border-radius: 10px; 
+} 
+
+nav a {
+  text-decoration: none; 
+  color: #1b263b; 
+  font-weight: 600;
+  transition: color 0.2s ease;
 }
 
-nav {
-    display: flex;
-    justify-content: space-evenly;
-    background-color: #778da9;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-radius: 10px;
+nav a:hover {
+  color: #ffffff;
 }
 
-div {
-    padding-left: 50px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    display: flex;
-    border-radius: 10px;
-    background-color: #778da9;
-    flex-direction: column;
+section > div { 
+  padding: 30px 50px; 
+  margin-top: 20px; 
+  margin-bottom: 20px; 
+  display: flex; 
+  border-radius: 10px; 
+  background-color: #778da9; 
+  flex-direction: column; 
+} 
+
+h1 { 
+  color: #1b263b; 
+  margin-top: 0;
+} 
+
+h2 {
+    color: #415a77;
+    margin-top: 0;
 }
 
-h1 {
-    color: #e0e1dd;
-}
-a {
-    text-decoration: none;
-    color: #000000;
+a { 
+  text-decoration: none; 
+  color: #000000; 
+} 
+
+.hidden-ap { 
+  max-height: 0; 
+  opacity: 0; 
+  overflow: hidden; 
+  margin: 0; 
+  padding: 0; 
+  flex-basis: 0; 
+  transition: max-height 0.3s ease-out, opacity 0.2s ease, margin 0.2s ease; 
+} 
+
+.aps:hover + .hidden-ap,
+.hidden-ap:hover { 
+  max-height: 150px; 
+  opacity: 1; 
+  flex-basis: auto;  
+  margin-top: 5px;   
+  margin-bottom: 15px;
 }
