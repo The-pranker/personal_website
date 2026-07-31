@@ -14,12 +14,18 @@
     <a href="#ec">Extra-Curriculars</a> 
     <a href="#resources">Resources</a> 
     <a href="#contact">Contact Me</a> 
+    <img id="dark-mode" src="images/dark_mode_icon.png">
   </nav> 
 
   <section id="index"> 
     <div> 
-      <p>Hello! Welcome to my personal website!</p> 
-      <p>Scroll down to see more stuff about me :)</p> 
+      <div id="index-text">
+        <p>Hello! Welcome to my personal website!</p> 
+        <p>Scroll down to see more stuff about me :)</p>
+      </div>
+      <p id="click-text"></p>
+      <button id="click-button">Click me!</button>
+      <audio id="click-sound" src="sounds/mouseclick.mp3"></audio>
     </div> 
   </section> 
 
@@ -99,38 +105,48 @@
             
             <figure> 
               <a href="https://scratch.mit.edu/projects/1203951249/" target="_blank"> 
-                <img src="zombie_survival_thumbnail.png" alt="Zombie Survival Scratch Game" style="max-width: 200px; border-radius: 5px;"> 
+                <img src="images/zombie_survival_thumbnail.png" alt="Zombie Survival Scratch Game" style="max-width: 200px; border-radius: 5px;"> 
               </a> 
               <figcaption style="font-size: 14px; margin-top: 5px;">Zombie Survival</figcaption> 
             </figure> 
 
             <figure>
                 <a href="https://scratch.mit.edu/projects/781719542/" target="_blank">
-                    <img src="sonic_the_game_thumbnail.png" alt="Sonic The Game V3 Scratch Game" style="max-width: 200px; border-radius: 5px;">
+                    <img src="images/sonic_the_game_thumbnail.png" alt="Sonic The Game V3 Scratch Game" style="max-width: 200px; border-radius: 5px;">
                 </a>
                 <figcaption style="font-size: 14px; margin-top: 5px;">Sonic The Game V3</figcaption>
             </figure>
 
             <figure>
                 <a href="https://scratch.mit.edu/projects/771575256/" target="_blank">
-                    <img src="sketch_lab_thumbnail.png" alt="Sketch Lab Scratch Project" style="max-width: 200px; border-radius: 5px;">
+                    <img src="images/sketch_lab_thumbnail.png" alt="Sketch Lab Scratch Project" style="max-width: 200px; border-radius: 5px;">
                 </a>
                 <figcaption style="font-size: 14px; margin-top: 5px;">Sketch Lab</figcaption>
             </figure>
             
             <figure>
                 <a href="https://scratch.mit.edu/projects/928378541/" target="_blank">
-                    <img src="ti_84_thumbnail.png" alt="TI 84 Scratch Project" style="max-width: 200px; border-radius: 5px;">
+                    <img src="images/ti_84_thumbnail.png" alt="TI 84 Scratch Project" style="max-width: 200px; border-radius: 5px;">
                 </a>
                 <figcaption style="font-size: 14px; margin-top: 5px;">TI 84 Calculator</figcaption>
             </figure>
           </div> 
         </div>
-        <a href="https://github.com/The-pranker" target="_blank">Github</a>
-        <br>
-        <a href="https://www.youtube.com/@The_pranker" taget="_blank">Youtube</a>
-        <p>wip more links to come + github hover</p>
 
+        <p class="github">Github</p>
+        <div class="grid-wrapper">
+          <div class="hidden-github">
+            <a href="https://github.com/The-pranker" target="_blank">Github Profile</a>
+          </div>
+        </div>
+        
+        <p class="youtube">Youtube</p>
+        <div class="grid-wrapper">
+          <div class="hidden-youtube">
+            <a href="https://www.youtube.com/@The_pranker" target="_blank">Youtube</a>
+          </div>
+        </div>
+        
       </div>
 
     </div> 
@@ -143,5 +159,6 @@
         <p>Mobile: (908)-723-4695</p>
     </div> 
   </section> 
+  <script src="script.js"></script>
 </body> 
 </html>
