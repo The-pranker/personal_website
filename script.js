@@ -2,6 +2,7 @@ const clickButton = document.getElementById("click-button");
 const clickSound = document.getElementById("click-sound");
 const clickText = document.getElementById("click-text");
 const darkMode = document.getElementById("dark-mode");
+const menu = document.getElementById("menu");
 
 const savedTheme = localStorage.getItem('theme');
 const darkModeRotation = localStorage.getItem('rotation');
